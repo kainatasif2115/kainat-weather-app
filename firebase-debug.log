@@ -1,0 +1,122 @@
+[debug] [2023-11-06T22:49:10.393Z] ----------------------------------------------------------------------
+[debug] [2023-11-06T22:49:10.394Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2023-11-06T22:49:10.395Z] CLI Version:   12.8.0
+[debug] [2023-11-06T22:49:10.395Z] Platform:      darwin
+[debug] [2023-11-06T22:49:10.395Z] Node Version:  v16.16.0
+[debug] [2023-11-06T22:49:10.396Z] Time:          Tue Nov 07 2023 03:49:10 GMT+0500 (Pakistan Standard Time)
+[debug] [2023-11-06T22:49:10.396Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-06T22:49:10.399Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-06T22:49:10.399Z] > authorizing via signed-in user (kainatasif2115@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/Kainat/Documents/Kainat's Weather App/kainat-weather-app
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-11-06T22:49:29.264Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-11-06T22:49:30.080Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-11-06T22:49:30.080Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project weathertest-397d2 (weatherTest) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-11-06T22:49:33.385Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/weathertest-397d2/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-11-06T22:49:33.385Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/weathertest-397d2/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/weathertest-397d2
+[debug] [2023-11-06T22:49:35.046Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/weathertest-397d2/services/firebasedatabase.googleapis.com 200
+[debug] [2023-11-06T22:49:35.047Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/weathertest-397d2/services/firebasedatabase.googleapis.com [omitted]
+[info] ✔  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-11-06T22:49:35.048Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/weathertest-397d2/locations/-/instances/weathertest-397d2-default-rtdb [none]
+[debug] [2023-11-06T22:49:36.662Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/weathertest-397d2/locations/-/instances/weathertest-397d2-default-rtdb 200
+[debug] [2023-11-06T22:49:36.663Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/weathertest-397d2/locations/-/instances/weathertest-397d2-default-rtdb {"name":"projects/115845190728/locations/us-central1/instances/weathertest-397d2-default-rtdb","project":"projects/115845190728","databaseUrl":"https://weathertest-397d2-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2023-11-06T22:49:45.116Z] >>> [apiv2][query] GET https://weathertest-397d2-default-rtdb.firebaseio.com/.settings/rules.json [none]
+[debug] [2023-11-06T22:49:45.838Z] <<< [apiv2][status] GET https://weathertest-397d2-default-rtdb.firebaseio.com/.settings/rules.json 200
+[debug] [2023-11-06T22:49:45.839Z] <<< [apiv2][body] GET https://weathertest-397d2-default-rtdb.firebaseio.com/.settings/rules.json [stream]
+[info] ✔  Database Rules for weathertest-397d2-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2023-11-06T22:49:45.842Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/weathertest-397d2/services/firestore.googleapis.com [none]
+[debug] [2023-11-06T22:49:45.842Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/weathertest-397d2/services/firestore.googleapis.com x-goog-quota-user=projects/weathertest-397d2
+[debug] [2023-11-06T22:49:47.581Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/weathertest-397d2/services/firestore.googleapis.com 200
+[debug] [2023-11-06T22:49:47.582Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/weathertest-397d2/services/firestore.googleapis.com [omitted]
+[debug] [2023-11-06T22:49:47.583Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/weathertest-397d2/databases/(default) [none]
+[debug] [2023-11-06T22:49:49.318Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/weathertest-397d2/databases/(default) 200
+[debug] [2023-11-06T22:49:49.319Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/weathertest-397d2/databases/(default) {"name":"projects/weathertest-397d2/databases/(default)","uid":"76e75dc4-f23e-48e9-bfc8-0b6afaad3162","createTime":"2023-11-05T07:19:19.102321Z","updateTime":"2023-11-05T07:19:19.102321Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2023-11-06T21:49:49.437920Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"ILXTjd+6sIIDMOmbrJ2prIID"}
+[debug] [2023-11-06T22:49:49.319Z] database_type: FIRESTORE_NATIVE
+[debug] [2023-11-06T22:49:49.319Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-06T22:49:49.320Z] > authorizing via signed-in user (kainatasif2115@gmail.com)
+[debug] [2023-11-06T22:49:49.320Z] [iam] checking project weathertest-397d2 for permissions ["firebase.projects.get"]
+[debug] [2023-11-06T22:49:49.320Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/weathertest-397d2:testIamPermissions [none]
+[debug] [2023-11-06T22:49:49.320Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/weathertest-397d2:testIamPermissions x-goog-quota-user=projects/weathertest-397d2
+[debug] [2023-11-06T22:49:49.320Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/weathertest-397d2:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-11-06T22:49:50.850Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/weathertest-397d2:testIamPermissions 200
+[debug] [2023-11-06T22:49:50.850Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/weathertest-397d2:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-11-06T22:50:03.154Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/weathertest-397d2/releases pageSize=10&pageToken=
+[debug] [2023-11-06T22:50:06.418Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/weathertest-397d2/releases 200
+[debug] [2023-11-06T22:50:06.418Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/weathertest-397d2/releases {"releases":[{"name":"projects/weathertest-397d2/releases/cloud.firestore","rulesetName":"projects/weathertest-397d2/rulesets/3b94af09-0209-4fb6-b472-fd4d9c1934ee","createTime":"2023-11-05T07:19:26.471336Z","updateTime":"2023-11-05T08:02:11.814643Z"}]}
+[debug] [2023-11-06T22:50:06.418Z] Found ruleset: projects/weathertest-397d2/rulesets/3b94af09-0209-4fb6-b472-fd4d9c1934ee
+[debug] [2023-11-06T22:50:06.419Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/weathertest-397d2/rulesets/3b94af09-0209-4fb6-b472-fd4d9c1934ee [none]
+[debug] [2023-11-06T22:50:07.438Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/weathertest-397d2/rulesets/3b94af09-0209-4fb6-b472-fd4d9c1934ee 200
+[debug] [2023-11-06T22:50:07.439Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/weathertest-397d2/rulesets/3b94af09-0209-4fb6-b472-fd4d9c1934ee [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-11-06T22:50:13.081Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/weathertest-397d2/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-11-06T22:50:13.083Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/weathertest-397d2/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-11-06T22:50:15.027Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/weathertest-397d2/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-11-06T22:50:15.029Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/weathertest-397d2/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2023-11-06T22:50:15.029Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/weathertest-397d2/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-11-06T22:50:15.029Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/weathertest-397d2/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/weathertest-397d2/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2023-11-06T22:50:15.031Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-06T22:50:15.031Z] > authorizing via signed-in user (kainatasif2115@gmail.com)
+[debug] [2023-11-06T22:50:15.031Z] [iam] checking project weathertest-397d2 for permissions ["firebase.projects.get"]
+[debug] [2023-11-06T22:50:15.032Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/weathertest-397d2:testIamPermissions [none]
+[debug] [2023-11-06T22:50:15.032Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/weathertest-397d2:testIamPermissions x-goog-quota-user=projects/weathertest-397d2
+[debug] [2023-11-06T22:50:15.032Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/weathertest-397d2:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-11-06T22:50:16.511Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/weathertest-397d2:testIamPermissions 200
+[debug] [2023-11-06T22:50:16.512Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/weathertest-397d2:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-11-06T22:50:16.512Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/weathertest-397d2/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-11-06T22:50:16.512Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/weathertest-397d2/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/weathertest-397d2
+[debug] [2023-11-06T22:50:16.515Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/weathertest-397d2/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-11-06T22:50:16.515Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/weathertest-397d2/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/weathertest-397d2
+[debug] [2023-11-06T22:50:18.194Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/weathertest-397d2/services/runtimeconfig.googleapis.com 200
+[debug] [2023-11-06T22:50:18.195Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/weathertest-397d2/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-11-06T22:50:18.195Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/weathertest-397d2/services/cloudfunctions.googleapis.com 200
+[debug] [2023-11-06T22:50:18.195Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/weathertest-397d2/services/cloudfunctions.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] 
+Overwriting codebase default...
+
+[info] ✔  Wrote functions/package.json 
+[info] ✔  Wrote functions/index.js 
