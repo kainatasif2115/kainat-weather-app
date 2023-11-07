@@ -48,7 +48,6 @@ function App() {
   
   return (
     <Router>
-
       <Routes>
         <Route path="/login" element={<SignIn setUserId={setUserId}/>} />
         <Route path="/signup" element={<SignUp/>} />
